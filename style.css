@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #6c6b6b;
 }
 
 .clearfix::after {
@@ -28,14 +27,16 @@ img {
     height: 70px;
     float: left;
 }
-.nav-text li {
+.nav-text {
+    float: right;
+}
+.nav-li {
     font-size: 16px;
     color: #FAFAFA;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px;
     line-height: 70px;
     list-style: none;
-    float: right;
+    float: left;
 }
 
 .main {
@@ -68,7 +69,7 @@ img {
 }
 
 .container {
-    width: 1024px;
+    width: 920px;
     margin: 0 auto;
 }
 .port-title {
@@ -92,7 +93,7 @@ img {
 }
 .portfolio-imags {
     width: 920px;
-    padding: 30px 0 90px 0;
+    padding-bottom: 90px;
     margin: 0 auto;
 }
 .portimg-1 {
@@ -132,7 +133,6 @@ img {
     background-position: center;
     float: left;
     margin-right: 10px;
-    margin-bottom: 10px;
 }
 .portimg-5 {
     background-image: url(img/talk.jpg);
@@ -142,7 +142,6 @@ img {
     background-position: center;
     float: left;
     margin-right: 10px;
-    margin-bottom: 10px;
 }
 .portimg-6 {
     background-image: url(img/webcamp-mother.png);
@@ -151,7 +150,6 @@ img {
     background-size: cover;
     background-position: center;
     float: left;
-    margin-bottom: 10px;
 }
 
 .feature {
@@ -159,7 +157,7 @@ img {
     background-position: center;
 }
 .container {
-    width: 1024px;
+    width: 800px;
     margin: 0 auto;
 }
 .feature-title {
@@ -258,10 +256,9 @@ img {
     font-size: 16px;
     color: #000000;
     text-align: center;
-    margin-bottom: 30px;
 }
 .profile-boxs {
-    padding-bottom: 30px 0 90px 0;
+    padding: 30px 0 0 0;
 }
 .profile-left {
     width: 50%;
@@ -325,6 +322,7 @@ img {
 .contact-boxs {
     width: 800px;
     margin: 0 auto;
+    margin-bottom: 90px;
 }
 .contact-left {
     width: 50%;
@@ -337,10 +335,11 @@ img {
 }
 .mail {
     font-size: 20px;
-    margin: 20px 0 5px 0;
+    margin: 30px 0 5px 0;
 }
 .mail-adress {
     margin-bottom: 20px;
+    color: #212121;
 }
 .tell{
     font-size: 20px;
@@ -348,6 +347,7 @@ img {
 }
 .tell-number {
     font-size: 16px;
+    color: #212121;
 }
 .contact-right {
     width: 400px;
@@ -358,7 +358,7 @@ img {
     margin: 0 auto;
 }
 .sns {
-    margin: 20px 0 5px 0;
+    margin: 30px 0 5px 0;
     font-size: 20px;
 }
 .fa-3x {
@@ -366,11 +366,13 @@ img {
     font-size: 50px;
     margin-right: 20px;
 }
+.inatagram {
+    margin-right: none;
+}
 
 footer {
     width: 100%;
     height: 60px;
-    margin-top: 90px;
     background-color: #EC715F;
 }
 .footer-text {
@@ -420,7 +422,7 @@ footer {
     .main-container {
         width: 90%;
     }
-    .main-title h1 {
+    .main-title {
         font-size: 40px;
     }
     .main-sub {
@@ -442,9 +444,11 @@ footer {
     }
     .portimg-4 {
         float: none;
+        margin-bottom: 10px;
     }
     .portimg-6 {
         float: none;
+        margin-bottom: 0;
     }
     .port-no {
         display: none;
@@ -470,10 +474,12 @@ footer {
     .feature-box1 {
         margin: 0 auto;
         float: none;
+        margin-bottom: 10px;
     }
     .feature-box2 {
         margin: 0 auto;
         float: none;
+        margin-bottom: 10px;
     }
     .feature-box3 {
         margin: 0 auto;
@@ -501,6 +507,8 @@ footer {
         margin-top: 20px;
     }
     .contact {
+        margin: 0 auto;
+        width: 90%;
         padding: 0 5%;
     }
     .container {
@@ -524,13 +532,18 @@ footer {
     .contactinfo-2 {
         width: 100%;
     }
+    .fa-3x {
+       font-size: 50px;
+       margin-right: 8px;
+    }
+    .mail {
+       margin-top: 30px;
+    }
     footer {
         width: 100%;
         margin: 0 auto;
-        margin-top: 90px;
     }
     .footer-text {
-        width: 90%;
         margin: 0 auto;
     }
 
